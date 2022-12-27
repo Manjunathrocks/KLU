@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('KLU.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: red;
+        }
+        h1{
+            color: red;
+        }
+    </style>
+    <script>
+        function fullname(){
+           fn = document.getElementById('n1').value;
+            ln =document.getElementById('n2').value;
+            fullname= fn +"  "+ ln 
+            document.getElementById('n3').value= fullname
+           
+        }
+        function add(){
+           var a = parseInt( document.getElementById('n1').value);
+           var b =parseInt( document.getElementById('n2').value);
+        var c = a + b ; 
+
+           alert("SUM :" +c  )
+        }
+
+        function sub(){
+           var a = parseInt( document.getElementById('n1').value);
+           var b =parseInt( document.getElementById('n2').value);
+        var c = a - b ; 
+
+           alert("SUM :" +c  )
+        }
+
+        function mul(){
+           var a = parseInt( document.getElementById('n1').value);
+           var b =parseInt( document.getElementById('n2').value);
+        var c = a * b ; 
+
+           alert("SUM :" +c  )
+        }
+
+        function div(){
+           var a = parseInt( document.getElementById('n1').value);
+           var b =parseInt( document.getElementById('n2').value);
+        var c = a / b ; 
+
+           alert("SUM :" +c  )
+        }
+    </script>
+</head>
+<body >
+    <div style="text-align: center;"> 
+        <marquee onmouseover="stop()" onmouseout="start()"><h1>Welcome to KL U  </h1></marquee> 
+        
+
+        <h4>
+        <form >
+            NAME : <input type="text" style="width: 300px;height: 40px;border-radius: 20px;" ><br>
+            PASS : <input type="password"> <br>
+
+            Ph : <input type="number"><br>
+            
+           DOB :  <input type="date"> <br> 
+           Qualification : 
+            <select>
+                <option>MTECH </option>
+                <option>B TECH  </option>
+                <option>MBA  </option>
+                <option>MCA  </option>
+            </select>
+        <br> 
+        Gender: 
+            <input type="radio" name="n1"> MALE 
+            <input type="radio" name="n1">FE MALE 
+            <br> 
+        Subjects : 
+            <input type="checkbox"> : JAVA 
+            <input type="checkbox"> : C  
+            <input type="checkbox"> : CPP 
+            <input type="checkbox"> : Python  
+            <input type="checkbox"> : .net  
+            <input type="checkbox"> : HTML  
+
+            <br> 
+
+
+        <input type="submit">
+        
+        <input type="submit" value="LOGIN ">
+        <input type="reset" value="RESEt ">
+        </h4>
+        </form>
+
+        <hr> 
+
+        <h1> 
+            First name  : <input type="text" id="n1" ><br>
+            last name   : <input type="text" id="n2"><br>
+
+            Full name : <input type="text" id="n3"><br>
+
+            
+            <input type="submit" value="CLICk" onclick="fullname()">
+            <!-- <input  type="submit" value="ADD" onclick="add()">
+            <input  type="submit" value="SUB" onclick="sub()">
+            <input  type="submit" value="MUL" onclick="mul()">
+            <input  type="submit" value="DIV" onclick="div()"> -->
+        </h1>
+    </div>
+</body>
+</html>
